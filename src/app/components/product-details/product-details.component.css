@@ -1,0 +1,41 @@
+.container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.header {
+  margin-top: 1vh;
+}
+
+.prod-img {
+  border-radius: 4px;
+}
+
+.prod-buttons {
+  border-radius: 4px;
+}
+
+.mi-button {
+  display: block;
+  margin-bottom: 10vh;
+  width: 20vw;
+}
+
+.footer {
+  font-size: 20px;
+}
+
+.default_msg {
+  margin-top: 5vw;
+  text-align: center;
+  color: black;
+}
+
+.sorry-img {
+  height: 50vh;
+}
+
+.default-home-btn {
+  margin-left: 0vw;
+  margin-bottom: 10vh;
+}

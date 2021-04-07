@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Hats",
+    "length": 3,
+    "products": [
+      {
+        "id": "c01",
+        "name": "Black Hat",
+        "image-src": "../../../assets/c01.jpg",
+        "url": "https://binaryb.8thwall.app/binary-beasts-4b877",
+        "short_link": "8th.io/mw4uc",
+        "price": "499 Rs",
+        "type": "cap",
+        "reviews": {
+          "fit": 93
+        },
+        "isWishList": "0",
+        "isCart": "0"
+      },
+      {
+        "id": "c02",
+        "name": "Cowboy Hat",
+        "image-src": "../../../assets/c02.jpg",
+        "url": "https:// binaryb.8thwall.app/binary-beasts-4a652",
+        "short_link": "8th.io/p4c45",
+        "price": "899 Rs",
+        "type": "cap",
+        "reviews": {
+          "fit": 90
+        },
+        "isWishList": "0",
+        "isCart": "0"
+      },
+      {
+        "id": "c03",
+        "name": "Witch Hat",
+        "image-src": "../../../assets/c03.jpg",
+        "url": "https://binaryb.8thwall.app/binary-beasts-4c763",
+        "short_link": "8th.io/fsdwt",
+        "price": "299 Rs",
+        "type": "cap",
+        "reviews": {
+          "fit": 87
+        },
+        "isWishList": "0",
+        "isCart": "0"
+      }
+    ]
+  },
+  {
+    "name": "Plants",
+    "length": 3,
+    "products": [
+      {
+        "id": "p01",
+        "name": "Cactus",
+        "image-src": "../../../assets/img/p01.jpg",
+        "url": "https://binaryb.8thwall.app/binary-beasts-3a127/",
+        "short_link": "8th.io/yvxhr",
+        "price": "499 Rs",
+        "type": "plant",
+        "reviews": {
+          "fit": 0
+        },
+        "isWishList": "0",
+        "isCart": "0"
+      },
+      {
+        "id": "p02",
+        "name": "Green Plant",
+        "image-src": "../../../assets/img/p02.jpg",
+        "url": "http://binaryb.8thwall.app/binary-beasts-3a126/",
+        "short_link": "8th.io/3xz7a",
+        "price": "499 Rs",
+        "type": "plant",
+        "reviews": {
+          "fit": 0
+        },
+        "isWishList": "0",
+        "isCart": "0"
+      },
+      {
+        "id": "p03",
+        "name": "Potted Plant",
+        "image-src": "../../../assets/img/p03.jpg",
+        "url": "https://binaryb.8thwall.app/binary-beasts-3a125/",
+        "short_link": "8th.io/th2b2",
+        "price": "499 Rs",
+        "type": "plant",
+        "reviews": {
+          "fit": 0
+        },
+        "isWishList": "0",
+        "isCart": "0"
+      }
+    ]
+  }
+]

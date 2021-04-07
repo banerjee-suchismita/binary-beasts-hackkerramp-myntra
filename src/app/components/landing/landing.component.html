@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div>
+  <mat-grid-list cols="1" rowHeight="10vh">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+      <img src="../../../assets/img/bb.png" class="header-img" />
+    </mat-grid-tile>
+    <!-- <mat-grid-tile></mat-grid-tile> -->
+
+    <!-- Search Bar | Enter Button -->
+    <mat-grid-tile>
+      <mat-form-field color="primary">
+        <mat-label>Search for products</mat-label>
+        <input
+          [(ngModel)]="searched_value"
+          matInput
+          type="text"
+          placeholder="What are you looking for? (Try: 'hats', 'plants')"
+        />
+        <mat-icon matSuffix color="accent">search</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+      <a
+        mat-button
+        mat-raised-button
+        color="primary"
+        routerLink="/catalog"
+        (click)="setSearchKey()"
+      >
+        Search</a
+      >
+    </mat-grid-tile>
+
+    <!--- Landing Page Image -->
+    <mat-grid-tile rowspan="5">
+      <img style="height: 40vh" src="./assets/img/landing.svg" />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<app-footer></app-footer>

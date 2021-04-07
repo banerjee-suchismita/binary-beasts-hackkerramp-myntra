@@ -1,0 +1,11 @@
+.spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  z-index: 1000;
+  height: 8vh;
+}
+
+.mat-icon-button {
+  cursor: default;
+}

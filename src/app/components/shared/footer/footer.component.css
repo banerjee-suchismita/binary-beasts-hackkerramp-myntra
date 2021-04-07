@@ -1,0 +1,56 @@
+.footer {
+  background-color: #26272b;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  bottom: 0;
+  color: white;
+  padding-right: 5%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer p {
+  display: inline-block;
+}
+.footer a {
+  display: inline-block;
+  text-decoration: underline;
+  color: white;
+}
+
+.footer a:hover {
+  color: gray;
+}
+
+.footer img {
+  display: inline-block;
+  height: 60%;
+}
+
+@media screen and (max-width: 945px) {
+  .footer a,
+  p {
+    font-size: 70%;
+  }
+
+  .footer img {
+    height: 40%;
+    margin-top: 0.5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer img {
+    height: 40%;
+    margin-top: 0.8%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer img {
+    height: 40%;
+    margin-top: 1.2%;
+  }
+}

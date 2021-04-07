@@ -1,0 +1,18 @@
+mat-form-field {
+  border: 2px solid gainsboro;
+  border-radius: 50px;
+  width: 60%;
+  height: 70%;
+  padding: 2px 20px;
+  margin: 20px;
+}
+
+.mat-input-element::placeholder {
+  color: #c2185b;
+}
+
+.header-img {
+  height: 100%;
+  /* font-size: 40px; */
+  color: #c2185b;
+}

@@ -1,0 +1,71 @@
+<app-header></app-header>
+<div *ngIf="showContent">
+  <!--container div-->
+  <div class="container">
+    <!--header | name of the product-->
+    <div class="header">
+      <h1>
+        <b>{{ product_name }}</b>
+      </h1>
+    </div>
+
+    <!--grid list-->
+    <mat-grid-list cols="3" rowHeight="400px" [gutterSize]="'30px'">
+      <!--product image-->
+      <mat-grid-tile colspan="2" class="prod-img">
+        <img src="../../../assets/img/{{ product.id }}.jpg" />
+      </mat-grid-tile>
+
+      <!--product-buttons | snackbars added-->
+      <mat-grid-tile class="prod-buttons">
+        <div class="btn">
+          <button
+            mat-raised-button
+            class="mi-button"
+            color="primary"
+            (click)="openWishlistSnackBar('Added to Wishlist!', 'Close')"
+          >
+            WishList
+          </button>
+          <button
+            mat-raised-button
+            class="mi-button"
+            color="primary"
+            (click)="openCartSnackBar('Added to Cart!', 'Close')"
+          >
+            Add to Cart
+          </button>
+          <button
+            mat-raised-button
+            class="mi-button"
+            color="primary"
+            routerLink="/ar-vr"
+          >
+            Try it out!
+          </button>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <!-- Price -->
+    <div class="footer">
+      <h3>
+        <b>{{ product_price }}</b>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!showContent" class="default_msg">
+  <h1 class="default_msg">Sorry, no products found!</h1>
+  <button
+    mat-raised-button
+    class="default-home-btn"
+    color="primary"
+    routerLink="/home"
+  >
+    Click here to search new products</button
+  ><br />
+  <img class="sorry-img" src="../../../assets/img/sorry.svg" />
+</div>
+<app-footer></app-footer>

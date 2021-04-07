@@ -1,0 +1,79 @@
+<div *ngIf="showContent">
+  <div class="header" *ngIf="selectedType.name === 'Hats'">
+    <h3>
+      <b>As per customer reviews : Fit {{ product.reviews.fit }} %</b>
+    </h3>
+  </div>
+
+  <!-- Loading Virtual Try-On-->
+  <div class="content" *ngIf="product_id === 'c01'">
+    <iframe
+      src="https://binaryb.8thwall.app/binary-beasts-4b877"
+      allow="camera; microphone"
+      class="frame"
+    ></iframe>
+  </div>
+
+  <div class="content" *ngIf="product_id === 'c02'">
+    <iframe
+      src="https://binaryb.8thwall.app/binary-beasts-4a652/"
+      allow="camera; microphone"
+      class="frame"
+    ></iframe>
+  </div>
+
+  <div class="content" *ngIf="product_id === 'c03'">
+    <iframe
+      src="https://binaryb.8thwall.app/binary-beasts-4c763"
+      allow="camera; microphone"
+      class="frame"
+    ></iframe>
+  </div>
+
+  <!-- For Plants | Rear Camera Required -->
+
+  <div class="plant-content" *ngIf="selectedType.name === 'Plants'">
+    <app-header></app-header>
+    <h1 class="plant-header">
+      <b>You would require a rear camera for this!</b> <br />
+      Please scan the QR code or go to the given link -
+    </h1>
+    <div class="sub-cont">
+      <img
+        *ngIf="product_id === 'p01'"
+        src="../../../assets/img/p01-qr.png"
+        class="qr"
+      />
+      <img
+        *ngIf="product_id === 'p02'"
+        src="../../../assets/img/p02-qr.png"
+        class="qr"
+      />
+      <img
+        *ngIf="product_id === 'p03'"
+        src="../../../assets/img/p03-qr.png"
+        class="qr"
+      />
+      <img src="../../../assets/img/plant_mobile.svg" class="img" />
+      <h3 class="link">{{ product.short_link }}</h3>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>
+
+<div *ngIf="!showContent">
+  <app-header></app-header>
+  <div class="default_msg">
+    <h1 class="default_msg">Sorry, no products found!</h1>
+    <button
+      mat-raised-button
+      class="mi-button"
+      color="primary"
+      routerLink="/home"
+    >
+      Click here to search new products</button
+    ><br />
+    <img class="sorry-img" src="../../../assets/img/sorry.svg" />
+  </div>
+  <app-footer></app-footer>
+</div>

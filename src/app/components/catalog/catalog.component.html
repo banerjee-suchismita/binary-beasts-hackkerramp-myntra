@@ -1,0 +1,66 @@
+<app-header></app-header>
+<!-- Product Catalog | Shown for valid searched keywords-->
+<div
+  class="container"
+  *ngIf="
+    searched_value === 'hat' ||
+    searched_value === 'hats' ||
+    searched_value === 'caps' ||
+    searched_value === 'cap' ||
+    searched_value === 'plant' ||
+    searched_value === 'plants'
+  "
+>
+  <br /><br /><br />
+  <h1>
+    <b>{{ selectedType.name }} &nbsp;>>&nbsp;{{ selectedType.length }}</b>
+  </h1>
+
+  <!-- Catalog -->
+  <mat-grid-list cols="3" [gutterSize]="'30px'" rowHeight="51vh">
+    <a
+      routerLink="/product"
+      *ngFor="let product of selectedType.products"
+      (click)="setProductId(product.id)"
+    >
+      <mat-grid-tile class="grid-tile">
+        <div>
+          <img
+            src="../../../assets/img/{{ product.id }}.jpg"
+            class="card-img"
+          />
+          <p class="card-prod-name">{{ product.name }}</p>
+          <p class="card-prod-price">{{ product.price }}</p>
+          <button mat-raised-button color="primary" class="btn">
+            Learn More
+          </button>
+        </div>
+      </mat-grid-tile>
+    </a>
+  </mat-grid-list>
+</div>
+
+<!-- Bottom Images -->
+<div class="bottom-img">
+  <img class="img-bottom" src="assets/img/catalog1.svg" />
+  <img class="img-bottom" style="right: 0" src="assets/img/catalog2.svg" />
+</div>
+
+<!-- Message displayed when invalid keywords entered -->
+<div
+  class="default_msg"
+  *ngIf="
+    searched_value != 'hat' &&
+    searched_value != 'hats' &&
+    searched_value != 'caps' &&
+    searched_value != 'cap' &&
+    searched_value != 'plant' &&
+    searched_value != 'plants'
+  "
+>
+  <h1 class="default_msg">
+    Sorry, no records found! Please try 'hats', 'caps', 'plants' :)
+  </h1>
+  <img class="sorry-img" src="../../../assets/img/sorry.svg" />
+</div>
+<app-footer></app-footer>
